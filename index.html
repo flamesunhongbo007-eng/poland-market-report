@@ -711,10 +711,10 @@ new Chart(document.getElementById('chart_solar_growth'),{
 new Chart(document.getElementById('chart_re_structure'),{
   type:'doughnut',
   data:{
-    labels:['光伏(24.8 GW)','陆上风电','生物质','其他(水电/地热)'],
+    labels:['光伏(24.8 GW)','陆上风电(9.5 GW)','生物质(1.8 GW)','其他(1.1 GW)','海风在建(5.9 GW)'],
     datasets:[{
-      data:[24.8, 9.5, 1.8, 1.1],
-      backgroundColor:[C.gold, C.teal, C.green, C.gray],
+      data:[24.8, 9.5, 1.8, 1.1, 5.9],
+      backgroundColor:[C.gold, C.teal, C.green, C.gray, C.blue],
       borderWidth:2, borderColor:'#fff'
     }]
   },
@@ -722,7 +722,14 @@ new Chart(document.getElementById('chart_re_structure'),{
     responsive:true, maintainAspectRatio:false,
     plugins:{
       legend:{position:'right'},
-      tooltip:{callbacks:{label:c=>c.label+': '+c.parsed+' GW'}}
+      tooltip:{
+        callbacks:{
+          label:function(c){
+            if (c.dataIndex === 4) return '海风(在建,Phase I 5.9 GW): '+c.parsed+' GW(2025年尚未商运)';
+            return c.label+': '+c.parsed+' GW';
+          }
+        }
+      }
     }
   }
 });
