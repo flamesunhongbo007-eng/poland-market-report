@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波兰建筑市场进入决策研究报告</title>
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #4A90E2;
+            --danger-color: #D0021B;
+            --bg-color: #F4F7F6;
+            --text-color: #333333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; }
+        h2 { color: var(--primary-color); margin-top: 30px; border-left: 4px solid var(--secondary-color); padding-left: 10px; }
+        h3 { color: #555; }
+        
+        /* KPI 看板样式 */
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .kpi-card {
+            background: linear-gradient(135deg, #003366, #0052a3);
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .kpi-value { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
+        .kpi-label { font-size: 13px; opacity: 0.8; }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td { border: 1px solid #E0E0E0; padding: 12px; text-align: left; }
+        th { background-color: #F8F9FA; color: var(--primary-color); }
+        tr:nth-child(even) { background-color: #FAFAFA; }
+        
+        /* 状态标签 */
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .badge-success { background: #E6F4EA; color: #137333; }
+        .badge-warning { background: #FEF7E0; color: #B06000; }
+        .badge-info { background: #E8F0FE; color: #1A73E8; }
+
+        /* 风险警告框 */
+        .risk-box {
+            background-color: #FFF5F5;
+            border-left: 4px solid var(--danger-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .risk-title { font-weight: bold; color: var(--danger-color); margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>波兰建筑市场进入决策研究报告</h1>
+    <p style="color: #666; font-size: 14px;">基于中交系/一航局战略视角的市场事实呈现与初步研判</p>
+
+    <!-- 核心指标数据看板 -->
+    <h2>一、 核心市场指标看板</h2>
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <div class="kpi-value">€1430 亿</div>
+            <div class="kpi-label">市场总体潜在规模</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">$2.0 亿</div>
+            <div class="kpi-label">CPK 框架协议潜在金额</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">18-24 GW</div>
+            <div class="kpi-label">远期新能源/风电规划</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">80%</div>
+            <div class="kpi-label">一航局主业对口率(7项中6项)</div>
+        </div>
+    </div>
+
+    <!-- 现有布局 -->
+    <h2>二、 中交系在波兰的现有布局 (2026年内表部分摘录)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>项目名称</th>
+                <th>合同额/预算</th>
+                <th>当前状态</th>
+                <th>一航局切入机会</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>克拉科夫地铁1期 (Mistrzejowice)</td>
+                <td>7500 万美元</td>
+                <td><span class="badge badge-success">执行中</span></td>
+                <td>桥梁/工可作子包</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>克拉科夫地铁2、3期 (20公里)</td>
+                <td>约 25 亿元</td>
+                <td><span class="badge badge-info">中长期</span></td>
+                <td>桥梁/轨道可作子包</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>CPK 中央交通港基本工程协议 (9工程包)</strong></td>
+                <td><strong>2 亿美元</strong></td>
+                <td><span class="badge badge-warning">正在投标</span></td>
+                <td><strong>土工、地基结构、结构物施工</strong></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>什切青-诺马伊希切航道 70公里</td>
+                <td>1.65 亿美元</td>
+                <td><span class="badge badge-info">设计阶段 (2026.04)</span></td>
+                <td>集团疏浚板块承接</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>华沙拉 95公里 250km/h 高铁轨道</td>
+                <td>1.1 亿美元</td>
+                <td><span class="badge badge-info">中长期</span></td>
+                <td>轨道/工可作子包</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>格丁尼亚外港集装箱码头 PPP (250万标箱)</td>
+                <td>6000 万美元</td>
+                <td><span class="badge badge-info">洽谈中 (PPP中方)</span></td>
+                <td>港工可作子包</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>No.622 福纳斯什切铁路 19.7公里 (Podłęże-Piekiełko)</td>
+                <td>约 7000 万美元</td>
+                <td><span class="badge badge-warning">刚启动招标 (2026.05)</span></td>
+                <td><strong>桥隧能力直接对口机会</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 关键风险 -->
+    <h2>三、 核心进入壁垒与关键风险研判</h2>
+    
+    <div class="risk-box">
+        <div class="risk-title">⚠️ 风险一：FSR外国补贴条例与公共采购法叠加拦截</div>
+        <div>自2023年起，超过2.5亿欧元且第三国补贴超过400万/年的项目必须强制申报，且分包商占比超过20%同样纳入审查。更严峻的是，<strong>波兰《公共采购法》第三国修订案将于2026年9月生效</strong>，届时业主有权直接拒收第三国投标。</div>
+    </div>
+
+    <div class="risk-box">
+        <div class="risk-title">⚠️ 风险二：历史退场阴影（A2 高速公路案的持久负面影响）</div>
+        <div>2011年中铁系海外公司中途退场，经历长达6年的诉讼纠纷直至2017年才达成和解。该案导致波兰银行界对中资企业的履约保函至今仍存在严重的<strong>定价溢价</strong>，信任壁垒尚未完全消除。</div>
+    </div>
+
+    <div class="risk-box">
+        <div class="risk-title">⚠️ 风险三：政治层面的“去风险”与商业“市场化”双轨制</div>
+        <div>随着波兰政府与欧盟政治立场的靠拢，波兰在电动汽车加征关税等领域积极推进“去风险”政策。在基建商业层面，中资企业<strong>无法再依靠强政治推力获取项目</strong>，必须100%遵循本地化和市场逻辑。</div>
+    </div>
+
+    <div class="risk-box">
+        <div class="risk-title">⚠️ 风险四：严苛的欧标（EN）规范与本地合规成本</div>
+        <div>波兰采用 EN 1997/1998 欧标设计与施工规范，与中国国标（GB）体系差异极大。同时，波兰国家电子发票系统（KSF）已全面强制实施，新劳工法要求强制电子合同与外籍工签，违规成本极高（最高罚款达5000万兹罗提）。</div>
+    </div>
+
+    <h2>四、 结论与下一步行动行动建议</h2>
+    <p>从主业对口度来看，波兰市场的铁路、港口及 CPK 项目与一航局的桥隧、港工核心能力高度对口。但鉴于极其高昂的退出成本与合规审查，建议<strong>切勿单独以主体身份突进</strong>，应采取以下策略：</p>
+    <ul>
+        <li>依托中国港湾等平台公司组建的<strong>联合体</strong>，以子承包方或执行方的身份隐蔽进入。</li>
+        <li>重点跟踪 <strong>2026年5月刚启动招标的 Fornale-Szczyrzyc 铁路段</strong>，或尝试与 PORR、Budimex 等已中标的欧洲本土巨头建立分包合作。</li>
+        <li>在投标前联合法务与合规部门，针对波兰 FSR 及新劳工法提前制定完善的合规与退出预案。</li>
+    </ul>
+</div>
+
+</body>
+</html>
